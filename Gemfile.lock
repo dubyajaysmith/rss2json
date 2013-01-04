@@ -1,7 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    nokogiri (1.5.5)
+    crack (0.3.1)
     puma (1.6.3)
       rack (~> 1.2)
     rack (1.4.1)
@@ -14,6 +14,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  nokogiri
+  crack
   puma
   sinatra (= 1.1.0)
