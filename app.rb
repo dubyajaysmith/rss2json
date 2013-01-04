@@ -14,7 +14,7 @@ get '/' do
     content_type :json
     convert_feed(@feed)
   else
-    erb :index
+    send_file File.expand_path('index.html', settings.public_folder)
   end
 
 end
