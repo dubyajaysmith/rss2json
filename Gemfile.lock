@@ -5,9 +5,12 @@ GEM
     puma (1.6.3)
       rack (~> 1.2)
     rack (1.4.1)
-    sinatra (1.1.0)
-      rack (~> 1.1)
-      tilt (~> 1.1)
+    rack-protection (1.2.0)
+      rack
+    sinatra (1.3.3)
+      rack (~> 1.3, >= 1.3.6)
+      rack-protection (~> 1.2)
+      tilt (~> 1.3, >= 1.3.3)
     tilt (1.3.3)
 
 PLATFORMS
@@ -16,4 +19,4 @@ PLATFORMS
 DEPENDENCIES
   crack
   puma
-  sinatra (= 1.1.0)
+  sinatra (= 1.3.3)
