@@ -75,7 +75,11 @@
           <h4>Usage</h4>
           <p>Pass a URL to the service like so:</p>
           <div class="highlight">
-            <pre>http://rsstojson.herokuapp.com/?feed=http://www.reddit.com/.rss</pre>
+            <pre>http://rsstojson.herokuapp.com/?http://feeds.5by5.tv/master</pre>
+          </div>
+          <p>RSStoJSON also supports JSONP callbacks!</p>
+          <div class="highlight">
+            <pre>http://rsstojson.herokuapp.com/?http://feeds.5by5.tv/master&callback=process_feed</pre>
           </div>
         </div>
       </div>
