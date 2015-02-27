@@ -13,7 +13,7 @@ get '/' do
     return "Invalid Feed URL" if !valid_url?(@feed)
 
     json = convert_feed(@feed)
-
+    headers 'Access-Control-Allow-Origin' => '*'
     content_type :json
     response = (@callback) ? "#{@callback}(#{json})" : json
   else
